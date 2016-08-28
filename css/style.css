@@ -1013,7 +1013,7 @@ dt {
    timeline comes in as an iframe with the class 'twitter-widget-0' */
 
 /* https://stackoverflow.com/questions/25236932/editing-css-of-twitter-timeline-widget-iframe */
-
+/* https://twittercommunity.com/t/how-can-i-extend-width-of-twitter-timeline-to-100-page-size/46101/10 */
 iframe[id^='twitter-widget-'] {
 
  height:600px !important;
