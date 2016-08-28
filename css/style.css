@@ -1014,7 +1014,14 @@ dt {
 
 /* https://stackoverflow.com/questions/25236932/editing-css-of-twitter-timeline-widget-iframe */
 
-#twitter-widget-0 { 
-  width: 100% !important; 
-  padding: 12px 12px 10px 69px !important; 
+iframe[id^='twitter-widget-'] {
+
+ height:600px !important;
+
+ margin-bottom:10px !important;
+
+ width:100% !important; 
+ max-width: none;
+ max-height: none;
 }
+

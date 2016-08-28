@@ -35,6 +35,27 @@
       });
     </script>
 
+    <script type="text/javascript">
+$(window).on('load', function () {
+
+ $('iframe[id^=twitter-widget-]').each(function () {
+
+ var head = $(this).contents().find('head');
+
+ if (head.length) {
+
+ head.append('<style>.timeline { max-width: 100% !important; width: 100% !important; } .timeline .stream { max-width: none !important; width: 100% !important; }</style>');
+
+ }
+
+ $('#twitter-widget-').append($('<div class=timeline>'));
+
+ })
+
+ });
+
+</script>
+
   </head>
 
   <body class="homepage">
@@ -118,7 +139,7 @@
 		development, and observational and theoretical
 		cosmology.</span>
 	      </header>
-	      
+
 	      <p class="center"><a href="research.html" class="button small">Learn More</a></p>
 
             </section>
@@ -129,7 +150,7 @@
 	      <header class="major">
 		<h2>News</h2>
 	      </header>
-	      <a class="twitter-timeline" data-width="520" data-height="400" href="https://twitter.com/sbu_astro">Tweets by sbu_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	      <a class="twitter-timeline" href="https://twitter.com/sbu_astro">Tweets by sbu_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
           </section>
          </div>
