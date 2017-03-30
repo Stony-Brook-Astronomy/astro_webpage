@@ -103,52 +103,52 @@
              be <b>http://www.astro.sunysb.edu/inewton</b>   Please note that 
              there is no "~" in the URL.
 
-        <h2><a NAME=email>Email:</a></h2> 
-             The email disk, <b>/var/spool/mail</b> is mounted only on kirk.
-             Each user of the ACF public systems should use 
-             <b>your_user_name@mail.astro.sunysb.edu</b> as their reply-to address.
-             Please DO NOT have mail sent directly to the individual systems, i.e. kirk, 
-             spock, scotty, etc.   
+        <!-- <h2><a NAME=email>Email:</a></h2>  -->
+        <!--      The email disk, <b>/var/spool/mail</b> is mounted only on kirk. -->
+        <!--      Each user of the ACF public systems should use  -->
+        <!--      <b>your_user_name@mail.astro.sunysb.edu</b> as their reply-to address. -->
+        <!--      Please DO NOT have mail sent directly to the individual systems, i.e. kirk,  -->
+        <!--      spock, scotty, etc.    -->
 
-             <p>You may forward your email to a system outside the
-             ACF by placing an ASCII file named <b>.forward</b>, containing the 
-             forwarding address on the first line, in your home directory.   Note
-             that in order for this to work, the <b>.forward</b> file must not have 
-             group or world write permissions enabled.   You can avoid this problem 
-             by issuing the command <b>chmod og-w .forward</b> in your home directory. 
+        <!--      <p>You may forward your email to a system outside the -->
+        <!--      ACF by placing an ASCII file named <b>.forward</b>, containing the  -->
+        <!--      forwarding address on the first line, in your home directory.   Note -->
+        <!--      that in order for this to work, the <b>.forward</b> file must not have  -->
+        <!--      group or world write permissions enabled.   You can avoid this problem  -->
+        <!--      by issuing the command <b>chmod og-w .forward</b> in your home directory.  -->
 
-             <p> There are a number of email clients available including <b>kmail</b>, 
-                 <b>thunderbird</b>, <b>mutt</b>, <b>alpine</b>, and <b>mail</b>.    
-                 If you require assistance in configuring a specific
-                 email client please see the system administrator.
+        <!--      <p> There are a number of email clients available including <b>kmail</b>,  -->
+        <!--          <b>thunderbird</b>, <b>mutt</b>, <b>alpine</b>, and <b>mail</b>.     -->
+        <!--          If you require assistance in configuring a specific -->
+        <!--          email client please see the system administrator. -->
 
-             <h3>Special Note for pine users:</h3>
-                 Users who wish to use the <b>pine</b> email client, which is unvailable
-                 as a standard part of modern linux distributions because of licensing 
-                 restrictions, should instead use <b>alpine</b>.
-                 The <b>alpine</b> client  has been designed as a replacement for <b>pine</b>
-                 and has the same user interface as <b>pine</b>.
+        <!--      <h3>Special Note for pine users:</h3> -->
+        <!--          Users who wish to use the <b>pine</b> email client, which is unvailable -->
+        <!--          as a standard part of modern linux distributions because of licensing  -->
+        <!--          restrictions, should instead use <b>alpine</b>. -->
+        <!--          The <b>alpine</b> client  has been designed as a replacement for <b>pine</b> -->
+        <!--          and has the same user interface as <b>pine</b>. -->
 
-                 <p>  When running alpine you may see a warning message about the fact that 
-                  <b>alpine</b> in unable to obtain a lock on your <b>/var/spool/mail</b>
-                  subdirectory.    You can safely ignore this warning if you follow precaution 1 below.
-                  In order to protect the integrity of your email <b>alpine</b> users 
-                  should take two special precautions:
-                    <ol>
-                       <li>  NEVER have more than one instance of <b>alpine</b> running at
-                          one time on the public cluster.  
-                          Having multiple simultaneous sessions could result
-                          in a loss of mail.
-                       <li>  YOU MUST ensure that <b>alpine</b> is configured to transfer mail
-                          from your <b>/var/spool/mail</b> subdirectory into your home directory.
-                          Using <b>/var/spool/mail</b> to store your mailbox is very bad idea as it 
-                          is not backed up and/or may be lost during a system upgrade.   You can
-                          cause <b>alpine</b> to transfer mail to your home directory (if it is not 
-                          already doing so) by creating an empty file named <b>mbox</b> in your home
-                          directory.   When <b>alpine</b> is opened it will automatically transfer
-                          your mail to this file.   Please see the system administrator if you need
-                          help in accomplishing this task.                          
-                    </ol>
+        <!--          <p>  When running alpine you may see a warning message about the fact that  -->
+        <!--           <b>alpine</b> in unable to obtain a lock on your <b>/var/spool/mail</b> -->
+        <!--           subdirectory.    You can safely ignore this warning if you follow precaution 1 below. -->
+        <!--           In order to protect the integrity of your email <b>alpine</b> users  -->
+        <!--           should take two special precautions: -->
+        <!--             <ol> -->
+        <!--                <li>  NEVER have more than one instance of <b>alpine</b> running at -->
+        <!--                   one time on the public cluster.   -->
+        <!--                   Having multiple simultaneous sessions could result -->
+        <!--                   in a loss of mail. -->
+        <!--                <li>  YOU MUST ensure that <b>alpine</b> is configured to transfer mail -->
+        <!--                   from your <b>/var/spool/mail</b> subdirectory into your home directory. -->
+        <!--                   Using <b>/var/spool/mail</b> to store your mailbox is very bad idea as it  -->
+        <!--                   is not backed up and/or may be lost during a system upgrade.   You can -->
+        <!--                   cause <b>alpine</b> to transfer mail to your home directory (if it is not  -->
+        <!--                   already doing so) by creating an empty file named <b>mbox</b> in your home -->
+        <!--                   directory.   When <b>alpine</b> is opened it will automatically transfer -->
+        <!--                   your mail to this file.   Please see the system administrator if you need -->
+        <!--                   help in accomplishing this task.                           -->
+        <!--             </ol> -->
 
         <h2><a NAME=printing>Printing:</a></h2> 
              Printing on the printers in Rm. 445B is available for PostScript and
