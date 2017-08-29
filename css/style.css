@@ -614,6 +614,10 @@ input[type="button"].small,
     border-color: white;
 }
 
+.wrapper.style5 a {
+    color: lightyellow;
+}
+
 /* Header */
 
 #header {
