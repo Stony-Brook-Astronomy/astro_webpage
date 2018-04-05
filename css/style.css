@@ -1084,3 +1084,6 @@ dt {
 }
 
 span.type {font-family: monospace;}
+
+iframe {border: 0px;}
+
