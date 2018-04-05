@@ -1082,3 +1082,5 @@ dt {
   width: 100% !important; 
   padding: 12px 12px 10px 69px !important; 
 }
+
+span.type {font-family: monospace;}
