@@ -1087,3 +1087,5 @@ span.type {font-family: monospace;}
 
 iframe {border: 0px;}
 
+iframe.embed {width: 95%;
+              height: 1000px;}
