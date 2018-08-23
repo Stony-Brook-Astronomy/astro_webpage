@@ -1,4 +1,4 @@
-@import url("font-awesome.min.css");
+@import url("all.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
 /*
@@ -233,9 +233,9 @@ input[type="email"] {
     content: "";
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: "Font Awesome\ 5 Free";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
     text-transform: none !important;
 }
 
