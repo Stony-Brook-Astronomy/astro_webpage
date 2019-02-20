@@ -1089,3 +1089,10 @@ iframe {border: 0px;}
 
 iframe.embed {width: 95%;
               height: 1000px;}
+
+
+p.columns {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+}
