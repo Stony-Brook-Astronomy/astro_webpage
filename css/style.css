@@ -481,7 +481,7 @@ input[type="button"].small,
 
 
 .wrapper.ad {
-    padding: 2em;
+    padding: 1em;
     background: #666666;
     text-align: center;
     color: white;
@@ -493,8 +493,8 @@ input[type="button"].small,
 }
 
 .wrapper.ad .container {
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .wrapper.ad p {
@@ -510,16 +510,16 @@ input[type="button"].small,
     letter-spacing: 1px;
     line-height: 1.4em;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 .wrapper.ad .major .byline {
     letter-spacing: normal;
-    line-height: 1.6em;
+    line-height: 1.25em;
     /* text-transform: capitalize; */
     text-transform: none;
-    font-size: 1.4em;
+    font-size: 1.25em;
 }
 
 .wrapper.ad h3 {
