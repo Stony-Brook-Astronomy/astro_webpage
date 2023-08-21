@@ -149,71 +149,59 @@
                     <p>At the present time the following systems are available for
                       use as a part of the ACF:
                       <ul>
-                        <li>kirk.astro.sunysb.edu
-                        <li>spock.astro.sunysb.edu
-                        <li>scotty.astro.sunysb.edu
-                        <li>sulu.astro.sunysb.edu
-                        <li>uhura.astro.sunysb.edu
-                        <li>mccoy.astro.sunysb.edu
-                        <li>klingon.astro.sunysb.edu
-                        <li>vulcan.astro.sunysb.edu
-                        <li>ugrad1.astro.sunysb.edu
-                        <li>ugrad2.astro.sunysb.edu
-                        <li>ugrad3.astro.sunysb.edu
-                        <li>ugrad4.astro.sunysb.edu
+                        <li>kirk.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+			  <b>(to be used only for password changes and web space access)</b>
+                        <li>spock.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+			<li>scotty.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+                        <li>sulu.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+                        <li>chekov.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+                        <li>uhura.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+                        <li>mccoy.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+                        <li>chapel.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+                        <li>sarek.astro.sunysb.edu (AMD Ryzen 5 3.7 GHz 6-Core w/ 16 GB RAM)
+                        <li>ugrad1.astro.sunysb.edu (Intel I5 3.3 GHz 4 core w/ 8 GB RAM)
+			  <b>(no ssh access)</b>
+                        <li>ugrad2.astro.sunysb.edu (Intel I5 3.3 GHz 4 core w/ 8 GB RAM)  <b>(no ssh access)</b>
+                        <li>ugrad3.astro.sunysb.edu (Intel I5 3.3 GHz 4 core w/ 8 GB RAM)  <b>(no ssh access)</b>
+                        <li>ugrad4.astro.sunysb.edu (Intel I5 3.3 GHz 4 core w/ 8 GB RAM)  <b>(no ssh access)</b>
+                        <li>ugrad5.astro.sunysb.edu (Intel I5 3.3 GHz 4 core w/ 8 GB RAM)  <b>(no ssh access)</b>
                       </ul>
                       All of the aforementioned machines are running the
-                      <a href="http://www.centos.org">CentOS 6.6</a>
+                      <a href="http://www.rockylinux.org">Rocky 9.2</a>
                       distribution of linux and they share the same
                       /home partition.  You may log into any of these
-                      systems using via secure shell, i.e. ssh, or
-                      directly at the console in room 445B.
+                      systems (except the ugrad1-ugrad5 machines) using via
+		      secure shell, i.e. ssh, or
+                      directly at the console in room 445B.  The machines ugrad1-ugrad5 are
+		      available for console logins (no ssh) in room 437A. <b>Note that
+			multiple failed login attempts will result in automatic blocking of
+			the offending IP address from making any further connections
+			for an extended time period </b>.
+		      
 
+                    <header class="minor">
+                      <h3>Backups</h3>
+                    </header>
                     <p><em>Critical note:</em> We do not maintain
-                      backups of the <span class="type">/home</span>
-                      directory.  <em>Backing up your data is your
-                        responsibility!</em>  You may find it useful to
-                      back up your data to DVD using the <span class="type">k3b</span>
-                      DVD burner found on some of the systems.  Please
-                      see the system administrator if you require
+                      backups of the <span class="type">/data</span>
+                      directories for special projects.  <em>Backing up your data is your
+                        responsibility!</em>
+		      You may find it useful to
+                      back up your data to a USB flash drive or to Google Drive.
+		      Please see the system administrator if you require
                       assistance.
 
-                  </section>
-                </div>
-              </div>
-
-
-              <div class="row">
-                <div class="12u">
-                  <section>
                     <header class="minor">
-                      <h3>Compilers</h3>
+                      <h3>Password changes</h3>
                     </header>
-
-                    The default compiler system is currently GCC 4.4.6
-                    but the GCC 4.8.2 compilers are available under
-                    the /opt/centos/devtoolset-2/root tree.  If you
-                    wish to use the GCC 4.8.2 compilers you should add
-                    the appropriate bin and man directories to the
-                    beginning of your PATH, and MANPATH environment
-                    variables.
-
-                  </section>
-                </div>
-              </div>
+		    All passwords <em>must</em> be changed only on kirk.astro.sunysb.edu by using
+		    the <b>passwd</b> command.
+		    The changed password will propogate to all other machines in approximately
+		    two minutes.
+		    
 
 
-              <div class="row">
-                <div class="12u">
-                  <section>
-                    <header class="minor">
-                      <h3>IDL</h3>
-                    </header>
-
-                    IDL is available on some, but not all of the
-                    public machines.  IDL users are advised to use
-                    kirk and scotty, the two most capable machines.
-                  </section>
+		  </section>
                 </div>
               </div>
 
@@ -231,7 +219,7 @@
                     at <a href="http://www.astro.sunysb.edu">http://www.astro.sunysb.edu</a>
                     This web space is available through the ACF public
                     systems via the <span class="type">/www</span> disk which is mounted
-                    only on kirk.  Each user has their own
+                    only on kirk.astro.sunysb.edu.  Each user has their own
                     subdirectory on the
                     <span class="type">/www</span> disk with the path
                     <span class="type">/www/your_user_name</span>.  The URL for each
@@ -240,8 +228,8 @@
                     For example: a user with the
                     username <em>inewton</em> would have a web directory
                     at <em>/www/inewton</em> and their URL would
-                    be <em>http://www.astro.sunysb.edu/inewton</em>
-                    Please note that there is no "~" in the URL.
+                    be <em>http://www.astro.sunysb.edu/inewton</em>.
+                      Please note that there is no "~" in the URL.
 
                   </section>
                 </div>
@@ -255,7 +243,7 @@
                       <h3>Printing</h3>
                     </header>
 
-                    Printing on the printers in Rm. 445B is available
+                    Printing on the printers in Rm. 445 is available
                     for PostScript and text files on the ACF systems
                     using the <span class="type">lpr</span> command.  The default printer
                     queue is the B&amp;W duplex queue.  The queue may be
@@ -280,36 +268,121 @@
                 <div class="12u">
                   <section>
                     <header class="minor">
-                      <h3>Available Software</h3>
+                      <h3>Python & Python Packages</h3>
+                    </header>
+
+                    The default Python on the systems is currently Python 3.9.16
+		    which is launched with the command:
+                    <ul><li><b>python</b></ul>
+                    but the Python 3.11 is also available via the command:
+		    <ul><li><b>python3.11</b></ul>
+
+		    A number of commonly used Python packages are also installed
+		    including:
+		    <ul>
+         	     <li><b>Scipy</b> is installed for both Python 3.9 and Python 3.11
+	             <li><b>Numpy</b> is installed for both Python 3.9 and Python 3.11
+	             <li><b>Matplotlib</b> is installed for Python 3.9.   At the current time
+			a system-wide installation of Matplotlib
+		    for Python 3.11 is not available but users may self install it
+		    under their own account via the command
+			<b>python3.11 -m pip install -U matplotlib</b>.
+
+                      <li> <b>Anaconda</b> is not installed on a systemwide basis but
+			each user may install this for themselves by following the
+			instructions found at <a href="https://docs.anaconda.com/free/anaconda/install/linux/">Anaconda Installation on Linux</a> site.
+			
+		    </ul>
+
+                  </section>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="12u">
+                  <section>
+                    <header class="minor">
+                      <h3>Jupyter Notebooks</h3>
+                    </header>
+
+                    Users may install Jupyter notebooks in their accounts
+		    via the commands:
+		    <ul>
+        		      <li> <b>python -m pip install -U jupyter</b>
+                	    <li> <b>jupyter notebook --generate-config </b>
+		    </ul>
+	            Alternatively the
+		    <b>python3.11</b> executable may be substituted for users wishing
+		    to install Jupyter notebooks to be used with Python 3.11.
+		    The installed Jupyter notebook systems can then be launched with the
+		    command: <ul><b>jupyter notebook</b></ul>
+		    
+                  </section>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="12u">
+                  <section>
+                    <header class="minor">
+                      <h3>Compilers</h3>
+                    </header>
+
+                    The default compiler system for C, C++, and Fortran is currently GCC 11.3.1
+                    but the GCC 12.2.1 compilers are available via Software Collections
+		    modules (execute the command <b>scl enable gcc-toolset-12 bash</b>) to
+		    enable the GCC 12 compilers.
+
+                  </section>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="12u">
+                  <section>
+                    <header class="minor">
+                      <h3>IDL</h3>
+                    </header>
+
+                    IDL will be available on some, but not all of the
+                    machines in the near future.
+                  </section>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="12u">
+                  <section>
+                    <header class="minor">
+                      <h3>Other Available Software</h3>
                     </header>
 
                     There are a number of useful software packages
                     installed on the ACF systems including:
                     <ul>
-                      <li><b>IDL</b> (ver 8.1) for data analysis and  plotting
+                      <li><b>IDL</b> (coming soon) for data analysis and  plotting
                       <li><b>Gnuplot</b> for plotting
-                      <li><b>SM</b>, a.k.a. SuperMongo (ver. 2.4.36), for plotting
                       <li><b>GCC</b> the Gnu Compiler Collection (ver. 4.4.6)
                         including compilers for C, C++, and F95
-                      <li><b>Python</b> (ver. 2.6.6 ) a very useful scripting language
-                      <li><b>Numpy</b> for linear algebra and numerical computing with  Python
-                      <li><b>Scipy</b> the Python scientific computing algorithms package
-                      <li><b>Matplotlib</b> the powerful MATPLOTLIB package for plotting
                       <li><b>Octave</b> the freeware clone of MATLAB for linear algebra
                         and other numerical computing
-                      <li><b>Maxima & Xmaxima</b> the maxima symbolic algebra system
-                      <li><b>Adobe Acroread</b> the Adobe Acrobat reader for PDF files
                       <li><b>LaTeX</b> the LaTeX typesetting package
-                      <li><b>Emacs and Xemacs</b> the EMACS editing system
-                      <li><b>Xv</b> the Xv image viewer
+                      <li><b>Emacs</b> the EMACS editing system
+                      <li><b>vi</b> & <b>vim</b> the vi and vim text editors
                       <li><b>Firefox</b> the Firefox web browser
                       <li><b>Google Chrome</b> the Google Chrome web browser
-                      <li><b>Adobe Flash</b> the Adobe Flash plugin for video
-                      <li><b>Open Office</b> the Open Office suite (oowriter, oocalc, ooinpress, etc.)
-                      <li><b>HDF5</b> the Hierarchical Data Format libraries (ver. 1.8)
+                      <li><b>Libre Office</b> the Libre Office suite (oowriter, oocalc, ooinpress, etc.)
+                      <li><b>HDF5</b> the Hierarchical Data Format libraries
+                      <li><b>MPICH</b> the MPICH implementation of the MPI message passing libraries and runtime environment
+                      <li><b>ds9</b> (<a href="https://sites.google.com/cfa.harvard.edu/saoimageds9">SAOImageDS astronomical image display tool</a>) is located in <b>/usr/local/ds9/bin/ds9</b>
+                      <li><b>sextractor</b><a href="https://www.astromatic.net/software/sextractor"> the
+			  astronomical catalogue builder </a> is located in <b>/usr/local/sextractor/bin</b>
+                      <li><b>Python & Python Packages</b> See the Python section above
                     </ul>
 
-                    Custom libraries for these packages should be
+                    Other versions of these packages should be
                     installed in user directories.  We regret that we
                     cannot install these in common space as there are
                     often conflicts between various versions of the
