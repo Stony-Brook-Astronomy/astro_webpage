@@ -167,7 +167,7 @@
                         <li>ugrad5.astro.sunysb.edu (Intel I5 3.3 GHz 4 core w/ 8 GB RAM)  <b>(no ssh access)</b>
                       </ul>
                       All of the aforementioned machines are running the
-                      <a href="http://www.rockylinux.org">Rocky 9.2</a>
+                      <a href="http://www.rockylinux.org">Rocky 9.3</a>
                       distribution of linux and they share the same
                       /home partition.  You may log into any of these
                       systems (except the ugrad1-ugrad5 machines) using via
@@ -271,7 +271,7 @@
                       <h3>Python & Python Packages</h3>
                     </header>
 
-                    The default Python on the systems is currently Python 3.9.16
+                    The default Python on the systems is currently Python 3.9.18
 		    which is launched with the command:
                     <ul><li><b>python</b></ul>
                     but the Python 3.11 is also available via the command:
@@ -328,11 +328,13 @@
                       <h3>Compilers</h3>
                     </header>
 
-                    The default compiler system for C, C++, and Fortran is currently GCC 11.3.1
-                    but the GCC 12.2.1 compilers are available via Software Collections
-		    modules (execute the command <b>scl enable gcc-toolset-12 bash</b>) to
-		    enable the GCC 12 compilers.
-
+                    The default compiler system for C, C++, and Fortran is currently GCC 11.4.1 via
+		    the commands <b>gcc</b>, <b>g++</b>, and <b>gfortran</b> respectively.
+                    However the GCC 12.2.1 and GCC 13.1.1 compilers are available via Software Collections
+		    modules (execute the command <b>scl enable gcc-toolset-13 bash</b>) to
+		    enable the GCC 13 compilers (or the command <b>scl enable gcc-toolset-12 bash</b> to enable
+		    the GCC 12 compilers). The CLANG 16 C/C++ compiler is also available via the
+		    command <b>clang</b>.
                   </section>
                 </div>
               </div>
@@ -345,8 +347,7 @@
                       <h3>IDL</h3>
                     </header>
 
-                    IDL will be available on some, but not all of the
-                    machines in the near future.
+                    IDL is available on the the Ryzen 5 machines located in room 445B.
                   </section>
                 </div>
               </div>
@@ -376,6 +377,7 @@
                       <li><b>Libre Office</b> the Libre Office suite (oowriter, oocalc, ooinpress, etc.)
                       <li><b>HDF5</b> the Hierarchical Data Format libraries
                       <li><b>MPICH</b> the MPICH implementation of the MPI message passing libraries and runtime environment
+                     <li><b>IDL</b> version 8.9 is available on spock, scotty, sulu, chekov, uhura, mccoy, chapel, and sarek in the directory <b>/usr/local/bin</b>
                       <li><b>ds9</b> (<a href="https://sites.google.com/cfa.harvard.edu/saoimageds9">SAOImageDS astronomical image display tool</a>) is located in <b>/usr/local/ds9/bin/ds9</b>
                       <li><b>sextractor</b><a href="https://www.astromatic.net/software/sextractor"> the
 			  astronomical catalogue builder </a> is located in <b>/usr/local/sextractor/bin</b>
