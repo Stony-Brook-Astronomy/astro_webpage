@@ -1056,8 +1056,8 @@ ul.style span.collab {
     position: static;
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    min-width: 95%;
+    max-width: 90%;
+    min-width: 85%;
     height: auto;
 }
 
