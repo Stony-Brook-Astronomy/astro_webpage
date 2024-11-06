@@ -260,6 +260,19 @@ ul.default {
     list-style: none;
 }
 
+ul.bullets {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    padding-inline-start: 2em;
+    margin-bottom: 1em;
+}
+
+ul.bullets li {
+    list-style: disc;
+    padding-left: 0.5em;
+}
+
 ul.default li {
     padding: 0.40em 0em;
 }
