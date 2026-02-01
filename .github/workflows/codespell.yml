@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.14'
 
+      - name: Install codespell
+        run: pip install codespell
+
       - name: Run codespell
         run: |
           codespell .
