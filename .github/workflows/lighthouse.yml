@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: "3.14"
 
+      - name: Preprocess
+        run: for i in $(git grep -l '<base href="/astro/">'); do sed -i s/'<base href="\/astro\/">'// $i; done
+
       - name: Audit with Lighthouse CI
         uses: treosh/lighthouse-ci-action@v12
         with:
