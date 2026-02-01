@@ -8,6 +8,10 @@
     }
   },
   "urls": [
-    "http://127.0.0.1:8080/index.html"
+    "http://127.0.0.1:8080/index.html",
+    "http://127.0.0.1:8080/about.html",
+    "http://127.0.0.1:8080/facilities.html",
+    "http://127.0.0.1:8080/people.html",
+    "http://127.0.0.1:8080/research.html"
   ]
 }
