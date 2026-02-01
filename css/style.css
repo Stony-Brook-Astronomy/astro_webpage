@@ -941,11 +941,13 @@ input[type="button"].small,
    color: #444444;
 }
 
-#people tr.legend
+#people th.legend
 {
    font-size: 100%;
    text-align: left;
    color: #444444;
+   background: #fff;
+   padding: 0;
 }
 
 #people td.legend
@@ -954,6 +956,7 @@ input[type="button"].small,
    text-align: left;
    color: #444444;
    padding-bottom: 0em;
+   background: #fff;
 }
 
 
